@@ -139,27 +139,6 @@
    </div>
 
    <div class="container">
-	   <script>
-	    function totalCheck()
-	    {
-		    return false;
-		    if(!emailCheck())
-		    {
-			    return false;
-		    }
-		    else if(!passwordCheck())
-		    {
-			    return false;
-		    }
-		    else if(!passwordConfirmCheck())
-		    {
-			    return false;
-		    }
-		    else{
-			    return true;
-		    }
-	    }
-	    </script>
 	   <form class="form-horizontal col-md-7 col-md-offset-3" method="post" action="registerConfirm.php" onsubmit="return totalCheck();">
 		   <div class="form-group">
 			   <label for="emailInput" class="col-sm-2 control-label">邮箱</label>
@@ -198,7 +177,7 @@
    <div class="form-group">
 	   <label for="captchaInput" class="col-sm-2 control-label">输验证码</label>
 	   <div class="col-sm-4">
-		   <input type="text" name="captcha_code" size="10" maxlength="6" id="captchaInput" />
+		   <input class="form-control" type="text" name="captcha_code" size="10" maxlength="6" id="captchaInput" />
 	   </div>
 	   <div class="col-sm-3">
 		   <a href="#" onclick="document.getElementById('captcha').src='securimage/securimage_show.php?'+Math.random(); return false" class="btn btn-info btn-sm">换一张</a>
