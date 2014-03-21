@@ -1,0 +1,42 @@
+html{
+	padding:0px;
+	border:0px;
+	margin:0px;
+}
+body{
+	padding:0px;
+	border:0px;
+	margin:0px;
+	background-color:yellow
+}
+div#topbar
+{
+	background-color:#000;
+	width:100%;
+	height:60px;
+	position:fixed;
+}
+div.container
+{
+	background-color:red;
+	height:2000px;
+}
+div#register-container
+{
+	border-width:2px;
+	border-style:solid;
+	border-radius:3px;
+	padding:50px 70px;
+}
+.headroom--top
+{
+	top:0px;
+}
+.headroom--not-top.slideDown
+{
+	top:0px;
+}
+.headroom--not-top.slideUp
+{
+	top:-60px;
+}
